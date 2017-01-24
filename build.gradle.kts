@@ -16,9 +16,9 @@ buildscript {
 }
 
 apply {
-	plugin("kotlin")
-	plugin("kotlin-spring")
-	plugin("org.springframework.boot")
+    plugin("kotlin")
+    plugin("kotlin-spring")
+    plugin("org.springframework.boot")
 }
 
 version = "0.0.1-SNAPSHOT"
@@ -29,7 +29,7 @@ configure<JavaPluginConvention> {
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 val kotlinVersion = extra["kotlinVersion"] as String
@@ -40,4 +40,3 @@ dependencies {
 
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
-
